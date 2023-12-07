@@ -18,3 +18,8 @@ body {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fd521b;
 }
+.bg-testimony {
+  background-image: url(../img/depoimento.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
