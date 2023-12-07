@@ -9,10 +9,12 @@ function handleScrollWindow() {
   if (scrollPosition > heightHeader) {
     header.setAttribute('style', 'padding: 10px;');
     header.classList.add('bg-body-default');
+    header.classList.remove('bg-transparent');
     // logoHeader.setAttribute('style', 'max-height: 70px;');
   } else {
     header.removeAttribute('style');
     header.classList.remove('bg-body-default');
+    header.classList.setAttribute('style', 'bg-transparent');
 
     // logoHeader.removeAttribute('style');
   }
