@@ -23,3 +23,9 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
 }
+
+.bg-footer {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
