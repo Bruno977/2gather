@@ -41,7 +41,7 @@
     border-radius: 0;
     opacity: 1;
   }
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  .swiper-pagination-services .swiper-pagination-bullet-active {
     background-color: #fd521b;
   }
   .bg-testimony {
