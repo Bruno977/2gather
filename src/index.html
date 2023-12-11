@@ -225,7 +225,7 @@
         <div
           class="flex flex-col lg:flex-row justify-between items-center gap-5"
         >
-          <div class="lg:w-2/5">
+          <div class="lg:w-2/5 order-2 lg:order-1">
             <img src="./assets/img/pre-title.svg" />
             <p class="text-primary-500 uppercase pt-2">
               Conheça nossos serviços
@@ -248,20 +248,20 @@
               </a>
             </div>
           </div>
-          <div class="lg:w-3/5 lg:pr-10">
+          <div class="lg:w-3/5 lg:pr-10 order-1 lg:order-2">
             <img src="./assets/img/homem.svg" class="ml-auto" alt="" />
           </div>
         </div>
       </div>
 
-      <div class="container xl:max-w-7xl mx-auto px-4 pt-20">
+      <div class="container xl:max-w-7xl mx-auto pl-4 lg:px-4 pt-20">
         <div class="flex items-center gap-5">
-          <div class="swiper-button-prev-partners">
+          <div class="swiper-button-prev-partners hidden lg:block">
             <i class="fa-solid fa-chevron-left text-primary-400 pointer"></i>
           </div>
           <div class="swiper swiper-partners">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide w-[150px]">
                 <a href="#" class="group">
                   <img
                     src="./assets/img/logo-aposta-ganha.png"
@@ -270,7 +270,7 @@
                   />
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide w-[150px]">
                 <a href="#" class="group">
                   <img
                     src="./assets/img/logo-aposta-ganha.png"
@@ -279,7 +279,7 @@
                   />
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide w-[150px]">
                 <a href="#" class="group">
                   <img
                     src="./assets/img/logo-vizzion.png"
@@ -288,7 +288,7 @@
                   />
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide w-[150px]">
                 <a href="#" class="group">
                   <img
                     src="./assets/img/logo-vizzion.png"
@@ -297,7 +297,7 @@
                   />
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide w-[150px]">
                 <a href="#" class="group">
                   <img
                     src="./assets/img/logo-aposta-ganha.png"
@@ -306,7 +306,7 @@
                   />
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide w-[150px]">
                 <a href="#" class="group">
                   <img
                     src="./assets/img/logo-vizzion.png"
@@ -317,29 +317,29 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next-partners">
+          <div class="swiper-button-next-partners hidden lg:block">
             <i class="fa-solid fa-chevron-right text-primary-400"></i>
           </div>
         </div>
       </div>
 
-      <div class="container xl:max-w-7xl mx-auto px-4 pt-32 pb-24">
+      <div class="container xl:max-w-7xl mx-auto lg:px-4 pt-20 lg:pt-32 pb-24">
         <div class="text-center">
           <div class="relative inline-block">
             <img
               src="./assets/img/triangle.svg"
               alt=""
-              class="absolute right-[calc(100%+15px)] bottom-[calc(100%-30px)]"
+              class="w-[30px] lg:w-10 absolute right-[calc(100%)] bottom-[calc(100%-10px)] lg:right-[calc(100%+15px)] lg:bottom-[calc(100%-30px)]"
             />
             <h2
-              class="uppercase text-[2.5rem] font-extrabold text-secondary-500"
+              class="uppercase text-[1.75rem] lg:text-[2.5rem] font-extrabold text-secondary-500 font-secondary"
             >
               Nossos Serviços
             </h2>
             <img
               src="./assets/img/triangle2.svg"
               alt=""
-              class="absolute bottom-[15px] -right-[10px]"
+              class="absolute bottom-[10px] -right-[15px] lg:bottom-[15px] lg:-right-[10px]"
             />
           </div>
         </div>
@@ -351,9 +351,9 @@
 
         <div class="swiper swiper-services">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide w-[300px] pl-4">
               <div
-                class="border transition border-gray2-500 p-6 hover:border-secondary-500"
+                class="border transition border-secondary-500 lg:border-gray2-500 p-6 hover:border-secondary-500"
               >
                 <div class="">
                   <img src="" alt="" />
@@ -367,9 +367,18 @@
                   valorizar sua marca através de soluções inovadoras e
                   personalizadas.
                 </p>
+                <a
+                  href="#"
+                  class="bg-primary-500 lg:bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
+                >
+                  <span class="text-white font-extrabold">Veja Mais</span>
+                  <i
+                    class="fa-solid fa-arrow-up text-white rotate-45 text-xs"
+                  ></i>
+                </a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide w-[300px]">
               <div
                 class="border transition border-gray2-500 p-6 hover:border-secondary-500"
               >
@@ -388,7 +397,7 @@
 
                 <a
                   href="#"
-                  class="bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
+                  class="bg-primary-500 lg:bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
                 >
                   <span class="text-white font-extrabold">Veja Mais</span>
                   <i
@@ -397,7 +406,7 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide w-[300px]">
               <div
                 class="border transition border-gray2-500 p-6 hover:border-secondary-500"
               >
@@ -416,7 +425,7 @@
 
                 <a
                   href="#"
-                  class="bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
+                  class="bg-primary-500 lg:bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
                 >
                   <span class="text-white font-extrabold">Veja Mais</span>
                   <i
@@ -425,7 +434,7 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide w-[300px]">
               <div
                 class="border transition border-gray2-500 p-6 hover:border-secondary-500"
               >
@@ -444,7 +453,7 @@
 
                 <a
                   href="#"
-                  class="bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
+                  class="bg-primary-500 lg:bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
                 >
                   <span class="text-white font-extrabold">Veja Mais</span>
                   <i
@@ -453,7 +462,7 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide w-[300px] pr-4">
               <div
                 class="border transition border-gray2-500 p-6 hover:border-secondary-500"
               >
@@ -472,7 +481,7 @@
 
                 <a
                   href="#"
-                  class="bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
+                  class="bg-primary-500 lg:bg-gray2-500 inline-flex items-center gap-2 py-2 px-4 border-b border-primary-500 transition hover:bg-primary-500"
                 >
                   <span class="text-white font-extrabold">Veja Mais</span>
                   <i
@@ -966,10 +975,18 @@
   <!-- Swiper Parceiros -->
   <script>
     const swiperPartners = new Swiper('.swiper-partners', {
-      slidesPerView: 5,
       navigation: {
         nextEl: '.swiper-button-next-partners',
         prevEl: '.swiper-button-prev-partners',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 'auto',
+        },
+
+        1024: {
+          slidesPerView: 5,
+        },
       },
     });
   </script>
@@ -977,11 +994,20 @@
   <!-- Swiper Serviços -->
   <script>
     const swiperServices = new Swiper('.swiper-services', {
-      slidesPerView: 4,
-      spaceBetween: 20,
       pagination: {
         el: '.swiper-services .swiper-pagination-services',
         clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+        },
+
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
       },
     });
   </script>

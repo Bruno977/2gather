@@ -826,6 +826,22 @@ html,
   top: 100%;
 }
 
+.right-\[calc\(100\%\)\] {
+  right: calc(100%);
+}
+
+.bottom-\[5px\] {
+  bottom: 5px;
+}
+
+.bottom-\[10px\] {
+  bottom: 10px;
+}
+
+.bottom-\[calc\(100\%-10px\)\] {
+  bottom: calc(100% - 10px);
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -980,6 +996,30 @@ html,
   width: 100%;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1106,6 +1146,10 @@ html,
   overflow: hidden;
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1149,6 +1193,11 @@ html,
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-secondary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 165 39 / var(--tw-border-opacity));
 }
 
 .bg-\[\#1a1a1a\] {
@@ -1201,6 +1250,11 @@ html,
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 82 27 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1368,6 +1422,10 @@ html,
   padding-top: 56.25%;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1424,6 +1482,10 @@ html,
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[1\.75rem\] {
+  font-size: 1.75rem;
 }
 
 .font-black {
@@ -1615,6 +1677,22 @@ html,
     position: static;
   }
 
+  .lg\:right-\[calc\(100\%\+15px\)\] {
+    right: calc(100% + 15px);
+  }
+
+  .lg\:bottom-\[15px\] {
+    bottom: 15px;
+  }
+
+  .lg\:-right-\[10px\] {
+    right: -10px;
+  }
+
+  .lg\:bottom-\[calc\(100\%-30px\)\] {
+    bottom: calc(100% - 30px);
+  }
+
   .lg\:order-1 {
     order: 1;
   }
@@ -1664,6 +1742,14 @@ html,
     width: 58.333333%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
   .lg\:max-w-\[calc\(100vw-\(\(100vw-1280px\)\/2\)\)\] {
     max-width: calc(100vw - ((100vw - 1280px) / 2));
   }
@@ -1680,6 +1766,14 @@ html,
     justify-content: space-between;
   }
 
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .lg\:overflow-clip {
+    overflow: clip;
+  }
+
   .lg\:border-b {
     border-bottom-width: 1px;
   }
@@ -1689,6 +1783,11 @@ html,
     border-color: rgb(43 43 43 / var(--tw-border-opacity));
   }
 
+  .lg\:bg-gray2-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(43 43 43 / var(--tw-bg-opacity));
+  }
+
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1696,6 +1795,14 @@ html,
 
   .lg\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 }
 
