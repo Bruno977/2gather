@@ -22,16 +22,18 @@
   </head>
   <body>
     <header
-      class="transition-all fixed top-0 left-0 right-0 z-50 p-5 border-b border-gray2-500 bg-transparent"
+      class="transition-all fixed top-0 left-0 right-0 z-50 p-5 lg:border-b lg:border-gray2-500 bg-transparent"
     >
-      <div class="container xl:max-w-7xl mx-auto px-4">
-        <div class="flex items-center justify-between">
-          <div>
-            <a href="/" data-logo>
+      <div class="container xl:max-w-7xl mx-auto lg:px-4">
+        <div
+          class="flex items-center justify-center lg:justify-between relative"
+        >
+          <div class="order-2 lg:order-1">
+            <a href="/" class="flex items-center justify-center" data-logo>
               <img src="./assets/img/logo.svg" alt="" />
             </a>
           </div>
-          <nav>
+          <nav class="hidden lg:block lg:order-2">
             <ul class="flex items-center gap-10">
               <li>
                 <a
@@ -87,40 +89,11 @@
               </li>
             </ul>
           </nav>
-          <button class="button-open-side" type="button" data-open-side>
-            <!-- <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 50 50"
-              width="50"
-              height="50"
-            >
-              <defs>
-                <image
-                  width="50"
-                  height="50"
-                  id="img1"
-                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IB2cksfwAAATJQTFRFKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrxskY9QAAAGZ0Uk5TAB1ekrnZ7fj5Hn3V6alxSScSB0gfL6rskzkBNY4WoOZzDFXrBpbXMpeyDg0KxpwDvZ28sVfdD1gaM6WN5bB0byAJ6iF7kILWIl+oY3BKutwk8f8TNNqDbowxmJtWoXIwEQUmlO76rTE+ZAAAAeFJREFUeJydlmdDwjAQhk8pyCiKIIJlVCwUsA4UkSUOHAhWhoICDlDw//8Fy1I0HUnfD2lGnyZpLncHgGhh0UAZTUtmk5EyLC6g4/9lsdpo+/KKY9XpXHW4lu20zbqmCrjXPd4NZr6H8fk9625FIBBkN0Nod2iTDQbkiS3OLwOMIT+3JdMdjvBRxfkhysfCyIeo+LYyASDEqX9L2Nnd21cjAPb3dnf+rCpxwCi9OxNzcDi/tkhSY47xPMnYb+ModaxNAByn0rNqhsviEABZLjOt5fJ4BEA+N3lGWQEXCZ1Mzq5wiksAnBVG5TmnYCZyuiheSuXVNT4BcH0jFSUfCeIzSnewqHnu82LoWyhXSAiAyh14RTJE9AJ1T4asVKFWJ0PqNWio3ixUggceyAgAMzESNkMD2yYnejTp2b6On6zjKHUYjA6zJDT+ZguIr9iTVJwXiS8ykbt4HrsLyLLY08ycEoHra09dn+RgO3hE58fBQprHsk2hlP5txPCCRXeuFU68aIekl8SfcEke+MbhVXU/aHiV1tZVD+JdJIjDKFVoK6UKbe5VfiTwxr7LJSTv7JtCQiKph6Y9TSnt6SkCI1msJboiuhz9j4/+p0us0LxGcjWhyoNqa/j1NWxVB2ULOv4NNLU8hlgxmdkAAAAASUVORK5CYII="
-                />
-                <image
-                  width="19"
-                  height="16"
-                  id="img2"
-                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAQAQMAAADOCtYhAAAAAXNSR0IB2cksfwAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAAGUlEQVR4nGNgYH/AAML//2NiBgYIxi4HBgA3+iA7/HLFmgAAAABJRU5ErkJggg=="
-                />
-              </defs>
-              <style></style>
-              <filter id="f0">
-                <feFlood flood-color="#fd521b" flood-opacity="1" />
-                <feBlend mode="normal" in2="SourceGraphic" />
-                <feComposite in2="SourceAlpha" operator="in" />
-              </filter>
-              <g filter="url(#f0)">
-                <use href="#img1" x="0" y="0" />
-                <use href="#img2" x="16" y="18" />
-              </g>
-            </svg> -->
-
+          <button
+            class="absolute left-0 lg:static button-open-side order-1 lg:order-2"
+            type="button"
+            data-open-side
+          >
             <span>
               <span></span>
               <span></span>
@@ -135,7 +108,7 @@
         <button
           type="button"
           data-close-side
-          class="fixed top-5 right-5 w-[51px] h-[51px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0"
+          class="fixed top-5 right-5 w-[51px] h-[51px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0 pointer-events-none"
         >
           <i class="fa-solid fa-xmark text-white text-2xl"></i>
         </button>
