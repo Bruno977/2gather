@@ -21,3 +21,34 @@ function handleScrollWindow() {
 }
 
 window.addEventListener('scroll', handleScrollWindow);
+
+// Menu Side
+const menuSide = document.querySelector('[data-menu-side]');
+const btnOpenSide = document.querySelector('[data-open-side]');
+const btnCloseSide = document.querySelector('[data-close-side]');
+const overlay = document.querySelector('[data-overlay]');
+
+const sidebar = document.querySelector('[data-sidebar]');
+
+if (menuSide && btnOpenSide && btnCloseSide && sidebar && overlay) {
+  function handleOpenMenu() {
+    menuSide.setAttribute('data-is-open', 'true');
+    sidebar.classList.remove('translate-x-full');
+    sidebar.classList.add('translate-x-0');
+    btnCloseSide.setAttribute('style', 'opacity:1 ;');
+
+    overlay.setAttribute('style', 'opacity:1; pointer-events: initial;');
+  }
+
+  function handleCloseMenu() {
+    menuSide.removeAttribute('data-is-open');
+    sidebar.classList.remove('translate-x-0');
+    btnCloseSide.setAttribute('style', 'opacity: 0;');
+    sidebar.classList.add('translate-x-full');
+
+    overlay.setAttribute('style', 'opacity:0; pointer-events: none;');
+  }
+
+  btnOpenSide.addEventListener('click', handleOpenMenu);
+  btnCloseSide.addEventListener('click', handleCloseMenu);
+}

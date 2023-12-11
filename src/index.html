@@ -87,8 +87,8 @@
               </li>
             </ul>
           </nav>
-          <button type="button">
-            <svg
+          <button class="button-open-side" type="button" data-open-side>
+            <!-- <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 50 50"
@@ -119,9 +119,124 @@
                 <use href="#img1" x="0" y="0" />
                 <use href="#img2" x="16" y="18" />
               </g>
-            </svg>
+            </svg> -->
+
+            <span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
         </div>
+      </div>
+
+      <div class="relative" data-menu-side>
+        <button
+          type="button"
+          data-close-side
+          class="fixed top-5 right-5 w-[51px] h-[51px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0"
+        >
+          <i class="fa-solid fa-xmark text-white text-2xl"></i>
+        </button>
+        <div
+          class="fixed right-0 top-0 bottom-0 bg-black p-5 w-[450px] z-40 duration-[0.4s] transition-all translate-x-full"
+          data-sidebar
+        >
+          <div class="p-5">
+            <a href="/">
+              <img src="./assets/img/logo.svg" alt="Logo" class="mx-auto" />
+            </a>
+            <h4
+              class="tex-lg font-extrabold text-secondary-500 pt-20 font-secondary"
+            >
+              Seja muito bem-vindo, <br />
+              em que podemos ajudar você?
+            </h4>
+
+            <div class="py-20">
+              <h4 class="text-white text-lg font-bold pb-5 font-secondary">
+                ENTRE EM CONTATO
+              </h4>
+              <div class="flex flex-col gap-5">
+                <a href="#" class="inline-flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-secondary-500"></i>
+                  <p class="text-text-500 font-extrabold text-lg">
+                    <span class="font-normal">11 </span>5087.9526
+                  </p>
+                </a>
+                <a href="#" class="inline-flex items-center gap-2">
+                  <i class="fa-solid fa-envelope text-secondary-500"></i>
+                  <p class="text-text-500">comercial@2gather.com.br</p>
+                </a>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-location-pin text-secondary-500"></i>
+
+                  <p class="text-text-500">
+                    Rua Machado Bitencourt 190 - CJ 407<br />
+                    Vila Clementino, - São Paulo - SP<br />
+                    CEP: 04044-903
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4
+                class="text-lg text-white font-extrabold pb-5 font-secondary uppercase"
+              >
+                Redes sociais
+              </h4>
+              <ul class="flex items-center gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="transition fa-brands fa-facebook-f text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="fa-brands fa-instagram transition text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin-in transition text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="fa-brands fa-pinterest-p transition text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none duration-[0.3s] transition-all"
+          data-overlay
+        ></div>
       </div>
     </header>
 
