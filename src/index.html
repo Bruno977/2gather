@@ -343,7 +343,9 @@
             />
           </div>
         </div>
-        <p class="text-white text-center pb-[70px] lg:w-2/3 lg:mx-auto">
+        <p
+          class="text-white text-center pb-[70px] lg:w-2/3 lg:mx-auto px-4 lg:px-4"
+        >
           Praesent ut orci sodales, cursus mauris at, fringilla mi. Quisque
           feugiat, libero vel pulvinar accumsan, mauris nulla malesuada dolor,
           at varius mauris magna nec felis. In congue elit ligula.
@@ -500,109 +502,134 @@
     </section>
 
     <section>
-      <div class="lg:max-w-[calc(100vw-((100vw-1280px)/2))] mr-auto pr-4">
-        <div class="flex items-center flex-col lg:flex-row gap-40">
-          <div class="lg:w-7/12">
+      <div
+        class="container lg:max-w-[calc(100vw-((100vw-1280px)/2))] lg:mr-auto pr-4"
+      >
+        <div class="flex items-center flex-col lg:flex-row gap-5 lg:gap-40">
+          <div class="w-full lg:w-7/12">
             <img
               src="./assets/img/a-gente-faz.png"
               alt=""
-              class="w-full h-full object-cover"
+              class="max-w-[280px] lg:max-w-none w-full h-full object-cover"
             />
           </div>
-          <div class="lg:w-5/12">
+          <div class="pl-4 lg:pl-0 lg:w-5/12">
             <div class="flex items-end gap-2">
-              <img src="./assets/img/pre-title2.svg" alt="" />
-              <a href="#" class="text-2xl text-white font-light leading-none"
+              <img
+                src="./assets/img/pre-title2.svg"
+                alt=""
+                class="max-w-[100px] lg:max-w-none"
+              />
+              <a
+                href="#"
+                class="font-secondary text-lg lg:text-2xl text-white font-light leading-none"
                 >www.<strong class="font-extrabold">2gatherpdv</strong
                 >.com.br</a
               >
             </div>
             <h2
-              class="text-[7.5rem] text-primary-500 uppercase font-extrabold leading-[105px] py-12"
+              class="font-secondary text-[4.5rem] lg:text-[7.5rem] text-primary-500 uppercase font-extrabold leading-[77px] lg:leading-[105px] py-5 lg:py-12"
             >
               A gente<br />
               faz!
             </h2>
-            <p class="text-[2.6rem] text-white leading-[43px] pb-7">
+            <p
+              class="font-secondary text-[2rem] lg:text-[2.6rem] text-white leading-[32px] lg:leading-[43px] pb-7"
+            >
               Treinamento e gestão de
               <strong class="font-extrabold">promotores</strong>
             </p>
-            <a
-              href="#"
-              class="inline-flex items-center gap-2 border-b border-primary-500 px-4 py-2"
-              ><span class="text-white font-extrabold"> Entre em Contato </span>
-              <i
-                class="fa-solid fa-arrow-right text-white text-xs relative top-[2px]"
-              ></i>
-            </a>
+            <div class="text-center lg:text-left">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 border-b border-primary-500 px-4 py-2"
+                ><span class="text-white font-extrabold">
+                  Entre em Contato
+                </span>
+                <i
+                  class="fa-solid fa-arrow-right text-white text-xs relative top-[2px]"
+                ></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container xl:max-w-7xl mx-auto px-4 py-28">
+      <div class="container xl:max-w-7xl mx-auto px-4 py-24 lg:py-28">
         <div class="text-center">
           <div class="relative inline-block">
             <img
               src="./assets/img/triangle.svg"
               alt=""
-              class="absolute right-[calc(100%+15px)] bottom-[calc(100%-30px)]"
+              class="w-[30px] lg:w-10 absolute right-[calc(100%+15px)] bottom-[calc(100%-10px)] lg:bottom-[calc(100%-30px)]"
             />
             <h2
-              class="uppercase text-[2.5rem] font-extrabold text-secondary-500"
+              class="uppercase text-[1.75rem] lg:text-[2.5rem] font-extrabold text-secondary-500 font-secondary"
             >
               PORTFOLIO
             </h2>
             <img
               src="./assets/img/triangle2.svg"
               alt=""
-              class="absolute bottom-[15px] -right-[15px]"
+              class="absolute bottom-[10px] -right-[30px] lg:bottom-[15px] lg:-right-[10px]"
             />
           </div>
         </div>
-        <p class="text-white text-center pb-[70px] lg:w-2/3 lg:mx-auto">
+        <p
+          class="text-white text-center pb-[30px] lg:pb-[70px] lg:w-2/3 lg:mx-auto"
+        >
           Praesent ut orci sodales, cursus mauris at, fringilla mi. Quisque
           feugiat, libero vel pulvinar accumsan, mauris nulla malesuada dolor,
           at varius mauris magna nec felis. In congue elit ligula.
         </p>
 
-        <div class="flex items-center flex-col lg:flex-row gap-5">
-          <a href="#" class="block lg:w-1/2 relative group">
-            <img src="./assets/img/project-1.png" alt="" />
-            <div
-              class="transition-all bg-gray2-600/80 absolute top-6 right-6 left-6 bottom-6 opacity-0 group-hover:opacity-100"
-            >
-              <div class="flex items-center flex-col justify-center h-full">
-                <span class="text-lg text-text-500">Tag do Projeto</span>
-                <p class="text-[1.375rem] font-extrabold pb-2 text-white">
-                  Nome do Projeto
-                </p>
-                <i
-                  class="fa-solid fa-arrow-up text-4xl text-primary-500 rotate-45"
-                ></i>
-              </div>
+        <div class="swiper swiper-portfolio">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="block relative group">
+                <img src="./assets/img/project-1.png" alt="" />
+                <div
+                  class="transition-all bg-gray2-600/80 absolute top-3 right-3 left-3 bottom-3 lg:top-6 lg:right-6 lg:left-6 lg:bottom-6 opacity-100 lg:opacity-0 group-hover:opacity-100"
+                >
+                  <div class="flex items-center flex-col justify-center h-full">
+                    <span class="text-lg text-text-500">Tag do Projeto</span>
+                    <p class="text-[1.375rem] font-extrabold pb-2 text-white">
+                      Nome do Projeto
+                    </p>
+                    <i
+                      class="fa-solid fa-arrow-up text-4xl text-primary-500 rotate-45"
+                    ></i>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="#" class="block lg:w-1/2 relative group">
-            <img src="./assets/img/project-2.png" alt="" />
-            <div
-              class="transition-all bg-gray2-600/80 absolute top-6 right-6 left-6 bottom-6 opacity-0 group-hover:opacity-100"
-            >
-              <div class="flex items-center flex-col justify-center h-full">
-                <span class="text-lg text-text-500">Tag do Projeto</span>
-                <p class="text-[1.375rem] font-extrabold pb-2 text-white">
-                  Nome do Projeto
-                </p>
-                <i
-                  class="fa-solid fa-arrow-up text-4xl text-primary-500 rotate-45"
-                ></i>
-              </div>
+            <div class="swiper-slide">
+              <a href="#" class="block relative group">
+                <img src="./assets/img/project-2.png" alt="" />
+                <div
+                  class="transition-all bg-gray2-600/80 absolute top-3 right-3 left-3 bottom-3 lg:top-6 lg:right-6 lg:left-6 lg:bottom-6 opacity-100 lg:opacity-0 group-hover:opacity-100"
+                >
+                  <div class="flex items-center flex-col justify-center h-full">
+                    <span class="text-lg text-text-500">Tag do Projeto</span>
+                    <p class="text-[1.375rem] font-extrabold pb-2 text-white">
+                      Nome do Projeto
+                    </p>
+                    <i
+                      class="fa-solid fa-arrow-up text-4xl text-primary-500 rotate-45"
+                    ></i>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
+          <div
+            class="swiper-pagination-portfolio flex items-center justify-center mt-7 py-1"
+          ></div>
         </div>
 
-        <div class="text-center pt-14">
+        <div class="text-center pt-8 lg:pt-14">
           <a
             href="#"
             class="px-6 py-2 bg-gray2-500 inline-flex items-center gap-2"
@@ -615,143 +642,159 @@
     </section>
 
     <section>
-      <div class="container xl:max-w-7xl mx-auto px-4 pb-28">
-        <div class="text-center pb-[70px]">
+      <div class="container xl:max-w-7xl mx-auto px-4 pb-16 lg:pb-28">
+        <div class="text-center pb-[30px] lg:pb-[70px]">
           <div class="relative inline-block">
             <img
               src="./assets/img/triangle.svg"
               alt=""
-              class="absolute right-[calc(100%+15px)] bottom-[calc(100%-30px)]"
+              class="w-[30px] lg:w-10 absolute right-[calc(100%+15px)] bottom-[calc(100%-10px)] lg:bottom-[calc(100%-30px)]"
             />
             <h2
-              class="uppercase text-[2.5rem] font-extrabold text-secondary-500"
+              class="uppercase text-[1.75rem] lg:text-[2.5rem] font-extrabold text-secondary-500 font-secondary"
             >
               DEPOIMENTOS
             </h2>
             <img
               src="./assets/img/triangle2.svg"
               alt=""
-              class="absolute bottom-[15px] left-[calc(100%+8px)]"
+              class="absolute bottom-[10px] -right-[30px] lg:bottom-[15px] lg:-right-[10px]"
             />
           </div>
         </div>
-        <div class="flex items-center flex-col lg:flex-row gap-8">
-          <div class="lg:w-1/2 bg-gray2-900 p-8 bg-testimony">
-            <div class="flex items-center gap-8 pb-6">
-              <img src="./assets/img/avatar.png" alt="" />
-              <div class="flex flex-col gap-[8px]">
-                <p class="text-white text-xl font-extrabold">
-                  Nome e Sobrenome
-                </p>
-                <div class="flex items-center gap-[3px]">
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
+        <!-- <div class="flex items-center flex-col lg:flex-row gap-8"> -->
+        <div class="swiper swiper-testimony">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-gray2-900 p-4 lg:p-8 bg-testimony">
+                <div class="flex items-center gap-8 pb-6">
+                  <img src="./assets/img/avatar.png" alt="" />
+                  <div class="flex flex-col gap-[8px]">
+                    <p class="text-white text-xl font-extrabold">
+                      Nome e Sobrenome
+                    </p>
+                    <div class="flex items-center gap-[3px]">
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-b border-[#4d4e50] pb-8">
+                  <div class="px-0 lg:px-8 relative">
+                    <img
+                      src="./assets/img/copy.svg"
+                      alt=""
+                      class="static lg:absolute top-0 left-0"
+                    />
+                    <p class="text-lg text-text-500 text-justify">
+                      Nam ultricies sed leo eget vehi. Sed variunoni magna
+                      quistoli mats. Inte tempus semper leoli rokomoni our has
+                      been lecto.
+                    </p>
+                    <p class="pt-6 text-lg text-text-500 text-justify">
+                      Nam ultricies sed leo eget vehi. Sed variunoni magna
+                      quistoli mats. Inte tempus semper leoli rokomoni our .
+                    </p>
+                    <img
+                      src="./assets/img/copy.svg"
+                      alt=""
+                      class="ml-auto static lg:absolute bottom-0 right-0 rotate-180"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="border-b border-[#4d4e50] pb-8">
-              <div class="px-8 relative">
-                <img
-                  src="./assets/img/copy.svg"
-                  alt=""
-                  class="absolute top-0 left-0"
-                />
-                <p class="text-lg text-text-500 text-justify">
-                  Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli
-                  mats. Inte tempus semper leoli rokomoni our has been lecto.
-                </p>
-                <p class="pt-6 text-lg text-text-500 text-justify">
-                  Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli
-                  mats. Inte tempus semper leoli rokomoni our .
-                </p>
-                <img
-                  src="./assets/img/copy.svg"
-                  alt=""
-                  class="absolute bottom-0 right-0 rotate-180"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/2 bg-gray2-900 p-8 bg-testimony">
-            <div class="flex items-center gap-8 pb-6">
-              <img src="./assets/img/avatar.png" alt="" />
-              <div class="flex flex-col gap-[8px]">
-                <p class="text-white text-xl font-extrabold">
-                  Nome e Sobrenome
-                </p>
-                <div class="flex items-center gap-[3px]">
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
-                  <i
-                    class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
-                  ></i>
+            <div class="swiper-slide">
+              <div class="bg-gray2-900 p-4 lg:p-8 bg-testimony">
+                <div class="flex items-center gap-8 pb-6">
+                  <img src="./assets/img/avatar.png" alt="" />
+                  <div class="flex flex-col gap-[8px]">
+                    <p class="text-white text-xl font-extrabold">
+                      Nome e Sobrenome
+                    </p>
+                    <div class="flex items-center gap-[3px]">
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star w-4 h-5 bg-[#df2919] text-white text-xs flex items-center justify-center"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-b border-[#4d4e50] pb-8">
+                  <div class="px-0 lg:px-8 relative">
+                    <img
+                      src="./assets/img/copy.svg"
+                      alt=""
+                      class="static lg:absolute top-0 left-0"
+                    />
+                    <p class="text-lg text-text-500 text-justify">
+                      Nam ultricies sed leo eget vehi. Sed variunoni magna
+                      quistoli mats. Inte tempus semper leoli rokomoni our has
+                      been lecto.
+                    </p>
+                    <p class="pt-6 text-lg text-text-500 text-justify">
+                      Nam ultricies sed leo eget vehi. Sed variunoni magna
+                      quistoli mats. Inte tempus semper leoli rokomoni our .
+                    </p>
+                    <img
+                      src="./assets/img/copy.svg"
+                      alt=""
+                      class="ml-auto static lg:absolute bottom-0 right-0 rotate-180"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="border-b border-[#4d4e50] pb-8">
-              <div class="px-8 relative">
-                <img
-                  src="./assets/img/copy.svg"
-                  alt=""
-                  class="absolute top-0 left-0"
-                />
-                <p class="text-lg text-text-500 text-justify">
-                  Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli
-                  mats. Inte tempus semper leoli rokomoni our has been lecto.
-                </p>
-                <p class="pt-6 text-lg text-text-500 text-justify">
-                  Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli
-                  mats. Inte tempus semper leoli rokomoni our .
-                </p>
-                <img
-                  src="./assets/img/copy.svg"
-                  alt=""
-                  class="absolute bottom-0 right-0 rotate-180"
-                />
-              </div>
-            </div>
           </div>
+          <div
+            class="swiper-pagination-testimony flex items-center justify-center mt-7 py-1"
+          ></div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer class="hidden lg:block">
       <div class="bg-footer py-10">
         <div class="container xl:max-w-7xl mx-auto px-4">
-          <a href="/" class="inline-block">
+          <a href="/" class="hidden lg:inline-block">
             <img src="./assets/img/logo.svg" alt="" class="pb-5" />
           </a>
           <div class="flex items-start flex-col lg:flex-row gap-8">
-            <div class="lg:w-1/2">
-              <h4 class="text-white text-lg font-bold pb-5">
+            <div class="w-full lg:w-1/2">
+              <h4
+                class="font-secondary text-center lg:text-left text-white lg:text-lg font-bold pb-5"
+              >
                 CADASTRE-SE NA NOSSA NEWSLETTER
               </h4>
 
               <form>
-                <div class="pb-5 flex items-end gap-2">
+                <div
+                  class="pb-5 flex items-center lg:items-end flex-col lg:flex-row gap-2"
+                >
                   <label
                     for="email"
                     class="border-b-2 border-[#8c8c8c] inline-flex items-center gap-2 py-2 h-10 w-full max-w-sm"
@@ -969,6 +1012,265 @@
         </div>
       </div>
     </footer>
+
+    <footer class="lg:hidden">
+      <div class="container mx-auto px-4">
+        <h4
+          class="font-secondary text-center lg:text-left text-white lg:text-lg font-bold pb-5"
+        >
+          CADASTRE-SE NA NOSSA NEWSLETTER
+        </h4>
+        <form>
+          <div
+            class="pb-8 flex items-center lg:items-end flex-col lg:flex-row gap-11"
+          >
+            <label
+              for="email"
+              class="border-b-2 border-[#8c8c8c] inline-flex items-center gap-2 py-2 h-10 w-full max-w-sm"
+            >
+              <img src="./assets/img/email.svg" alt="" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu Email"
+                class="bg-transparent border-none focus:border-none focus-visible:outline-0 text-white placeholder:text-[#8c8c8c]"
+              />
+            </label>
+            <button
+              type="submit"
+              class="border border-white w-[70%] h-10 px-4 transition hover:bg-white inline-flex items-center justify-center gap-2 group"
+            >
+              <span
+                class="font-extrabold text-white transition group-hover:text-text-500"
+                >Enviar</span
+              >
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-xs transition text-white group-hover:text-text-500"
+              ></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="bg-footer-mobile pt-8 pb-40">
+        <div class="container mx-auto px-4">
+          <p class="text-white text-lg font-bold pb-5">ENTRE EM CONTATO</p>
+          <div class="flex flex-col gap-5">
+            <a href="#" class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-phone text-secondary-500"></i>
+              <p class="text-text-500 font-extrabold text-lg">
+                <span class="font-normal">11 </span>5087.9526
+              </p>
+            </a>
+            <a href="#" class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-secondary-500"></i>
+              <p class="text-text-500">comercial@2gather.com.br</p>
+            </a>
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-location-pin text-secondary-500"></i>
+
+              <p class="text-text-500">
+                Rua Machado Bitencourt 190 - CJ 407<br />
+                Vila Clementino, - São Paulo - SP<br />
+                CEP: 04044-903
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="font-secondary text-lg text-white font-extrabold pb-8 pt-12"
+            >
+              MENU
+            </h4>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href="/"
+                  class="text-lg text-white flex items-center justify-between"
+                >
+                  <span class="relative">
+                    Home
+                    <i
+                      class="fa-solid fa-caret-down text-xs text-primary-500 absolute bottom-full left-0 right-0 flex items-center justify-center"
+                    ></i>
+                  </span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/quem-somos.html"
+                  class="text-lg text-text-500 flex items-center justify-between"
+                  ><span>Quem Somos</span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+
+              <li>
+                <div class="flex items-center justify-between">
+                  <a href="/servicos.html" class="text-lg text-text-500"
+                    >Serviços
+                  </a>
+                  <button type="button" class="px-4" data-open-footer>
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 transition-all text-lg"
+                    ></i>
+                  </button>
+                </div>
+                <div
+                  class="overflow-hidden transition-all"
+                  style="max-height: 0"
+                  data-footer-menu
+                >
+                  <ul class="py-4">
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span> Seja a Marca
+                        Atraente</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Criação e
+                        Planejamento</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Dashboards</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Lojística</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>
+                        Gelolocalização</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Call center</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Reparo Tech</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="/na-midia.html"
+                  class="text-lg text-text-500 flex items-center justify-between"
+                  ><span>Na Mídia</span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contato.html"
+                  class="text-lg text-text-500 flex items-center justify-between"
+                  ><span>Contato</span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-12">
+            <h4 class="text-lg text-white font-extrabold pb-5">
+              Redes sociais
+            </h4>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="transition fa-brands fa-facebook-f text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="fa-brands fa-instagram transition text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="fa-brands fa-linkedin-in transition text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="fa-brands fa-pinterest-p transition text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1a1a1a]">
+        <div class="container xl:max-w-7xl mx-auto px-4 py-6">
+          <div
+            class="flex items-center flex-col gap-6 justify-center text-center"
+          >
+            <p class="text-white">
+              Copyright © 2023 2Gather. Todos os direitos reservados.
+            </p>
+            <a href="#" class="flex items-start gap-2">
+              <p class="text-white text-xs">Desenvolvidor por</p>
+              <img src="./assets/img/binden.png" alt="Binden" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/custom.js"></script>
@@ -1006,6 +1308,48 @@
 
         1024: {
           slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+  <!-- Swiper Portfólio -->
+  <script>
+    const swiperPortfolio = new Swiper('.swiper-portfolio', {
+      pagination: {
+        el: '.swiper-portfolio .swiper-pagination-portfolio',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+  <!-- Swiper Depoimentos -->
+  <script>
+    const swiperTestimony = new Swiper('.swiper-testimony', {
+      pagination: {
+        el: '.swiper-testimony .swiper-pagination-testimony',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+
+        1024: {
+          slidesPerView: 2,
           spaceBetween: 20,
         },
       },

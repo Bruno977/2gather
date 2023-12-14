@@ -53,3 +53,20 @@ if (menuSide && btnOpenSide && btnCloseSide && sidebar && overlay) {
   btnOpenSide.addEventListener('click', handleOpenMenu);
   btnCloseSide.addEventListener('click', handleCloseMenu);
 }
+
+// Footer Mobile
+const btnOpenFooter = document.querySelector('[data-open-footer]');
+const menuFooter = document.querySelector('[data-footer-menu]');
+if (btnOpenFooter && menuFooter) {
+  btnOpenFooter.addEventListener('click', () => {
+    const heightFooter = menuFooter.scrollHeight;
+    const arrow = btnOpenFooter.querySelector('i');
+    if (menuFooter.offsetHeight === 0) {
+      menuFooter.setAttribute('style', `max-height: ${heightFooter}px;`);
+      arrow.setAttribute('style', 'transform: rotate(90deg);');
+    } else {
+      menuFooter.setAttribute('style', `max-height: 0px;`);
+      arrow.setAttribute('style', 'transform: rotate(0deg);');
+    }
+  });
+}
