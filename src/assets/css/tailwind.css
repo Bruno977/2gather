@@ -131,4 +131,24 @@
     background-size: cover;
     background-position: top left;
   }
+
+  /* Sidebar */
+
+  @media screen and (min-width: 1024px) {
+    .sidebar-header .content-sidebar {
+      transform: translateX(100%);
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .sidebar-header .content-sidebar {
+      transform: translateX(-100%);
+    }
+  }
+  .sidebar-header.active .content-sidebar {
+    transform: translateX(0);
+  }
+  .sidebar-header.active .close-side {
+    opacity: 1;
+    pointer-events: initial;
+  }
 }

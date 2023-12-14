@@ -104,28 +104,168 @@
         </div>
       </div>
 
-      <div class="relative" data-menu-side>
+      <div class="relative sidebar-header" data-menu-side>
         <button
           type="button"
           data-close-side
-          class="fixed top-5 right-5 w-[51px] h-[51px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0 pointer-events-none"
+          class="hidden lg:block close-side fixed top-5 right-5 w-[51px] h-[51px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0 pointer-events-none"
         >
           <i class="fa-solid fa-xmark text-white text-2xl"></i>
         </button>
         <div
-          class="fixed right-0 top-0 bottom-0 bg-black p-5 w-[450px] z-40 duration-[0.4s] transition-all translate-x-full"
+          class="overflow-y-auto border-r border-[#141414] lg:border-r-0 content-sidebar fixed left-0 lg:left-[unset] lg:right-0 top-0 bottom-0 bg-black lg:p-5 w-[300px] lg:w-[450px] z-40 duration-[0.4s] transition-all"
           data-sidebar
         >
+          <button
+            type="button"
+            data-close-side
+            class="lg:hidden close-side fixed top-5 right-5 w-[40px] h-[40px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0 pointer-events-none"
+          >
+            <i class="fa-solid fa-xmark text-primary-500 text-xl"></i>
+          </button>
           <div class="p-5">
             <a href="/">
               <img src="./assets/img/logo.svg" alt="Logo" class="mx-auto" />
             </a>
             <h4
-              class="tex-lg font-extrabold text-secondary-500 pt-20 font-secondary"
+              class="tex-lg font-extrabold text-secondary-500 pt-8 lg:pt-20 font-secondary"
             >
               Seja muito bem-vindo, <br />
               em que podemos ajudar você?
             </h4>
+
+            <div class="lg:hidden pt-10">
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    href="/"
+                    class="text-lg text-white flex items-center justify-between"
+                  >
+                    <span class="relative">
+                      Home
+                      <i
+                        class="fa-solid fa-caret-down text-xs text-primary-500 absolute bottom-full left-0 right-0 flex items-center justify-center"
+                      ></i>
+                    </span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/quem-somos.html"
+                    class="text-lg text-text-500 flex items-center justify-between"
+                    ><span>Quem Somos</span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+
+                <li data-menu-mobile>
+                  <div class="flex items-center justify-between">
+                    <a href="/servicos.html" class="text-lg text-text-500"
+                      >Serviços
+                    </a>
+                    <button type="button" class="px-4" data-open-menu-mobile>
+                      <i
+                        class="fa-solid fa-angle-right text-primary-500 transition-all text-lg"
+                      ></i>
+                    </button>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all"
+                    style="max-height: 0"
+                    data-content-menu
+                  >
+                    <ul class="py-4">
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span> Seja a
+                          Marca Atraente</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Criação e
+                          Planejamento</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span
+                          >Dashboards</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Lojística</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>
+                          Gelolocalização</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Call
+                          center</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Reparo
+                          Tech</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a
+                    href="/na-midia.html"
+                    class="text-lg text-text-500 flex items-center justify-between"
+                    ><span>Na Mídia</span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/contato.html"
+                    class="text-lg text-text-500 flex items-center justify-between"
+                    ><span>Contato</span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <div class="py-20">
               <h4 class="text-white text-lg font-bold pb-5 font-secondary">
@@ -1110,12 +1250,12 @@
                 </a>
               </li>
 
-              <li>
+              <li data-menu-mobile>
                 <div class="flex items-center justify-between">
                   <a href="/servicos.html" class="text-lg text-text-500"
                     >Serviços
                   </a>
-                  <button type="button" class="px-4" data-open-footer>
+                  <button type="button" class="px-4" data-open-menu-mobile>
                     <i
                       class="fa-solid fa-angle-right text-primary-500 transition-all text-lg"
                     ></i>
@@ -1124,7 +1264,7 @@
                 <div
                   class="overflow-hidden transition-all"
                   style="max-height: 0"
-                  data-footer-menu
+                  data-content-menu
                 >
                   <ul class="py-4">
                     <li>
