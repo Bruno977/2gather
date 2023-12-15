@@ -1985,6 +1985,10 @@ html,
     padding-bottom: 6rem;
   }
 
+  .lg\:pl-11 {
+    padding-left: 2.75rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }

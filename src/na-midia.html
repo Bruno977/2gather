@@ -22,16 +22,18 @@
   </head>
   <body>
     <header
-      class="transition-all fixed top-0 left-0 right-0 z-50 p-5 border-b border-gray2-500 bg-transparent"
+      class="transition-all fixed top-0 left-0 right-0 z-50 p-5 lg:border-b lg:border-gray2-500 bg-transparent"
     >
-      <div class="container xl:max-w-7xl mx-auto px-4">
-        <div class="flex items-center justify-between">
-          <div>
-            <a href="/" data-logo>
+      <div class="container xl:max-w-7xl mx-auto lg:px-4">
+        <div
+          class="flex items-center justify-center lg:justify-between relative"
+        >
+          <div class="order-2 lg:order-1">
+            <a href="/" class="flex items-center justify-center" data-logo>
               <img src="./assets/img/logo.svg" alt="" />
             </a>
           </div>
-          <nav>
+          <nav class="hidden lg:block lg:order-2">
             <ul class="flex items-center gap-10">
               <li>
                 <a
@@ -87,41 +89,267 @@
               </li>
             </ul>
           </nav>
-          <button type="button">
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 50 50"
-              width="50"
-              height="50"
-            >
-              <defs>
-                <image
-                  width="50"
-                  height="50"
-                  id="img1"
-                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IB2cksfwAAATJQTFRFKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrxskY9QAAAGZ0Uk5TAB1ekrnZ7fj5Hn3V6alxSScSB0gfL6rskzkBNY4WoOZzDFXrBpbXMpeyDg0KxpwDvZ28sVfdD1gaM6WN5bB0byAJ6iF7kILWIl+oY3BKutwk8f8TNNqDbowxmJtWoXIwEQUmlO76rTE+ZAAAAeFJREFUeJydlmdDwjAQhk8pyCiKIIJlVCwUsA4UkSUOHAhWhoICDlDw//8Fy1I0HUnfD2lGnyZpLncHgGhh0UAZTUtmk5EyLC6g4/9lsdpo+/KKY9XpXHW4lu20zbqmCrjXPd4NZr6H8fk9625FIBBkN0Nod2iTDQbkiS3OLwOMIT+3JdMdjvBRxfkhysfCyIeo+LYyASDEqX9L2Nnd21cjAPb3dnf+rCpxwCi9OxNzcDi/tkhSY47xPMnYb+ModaxNAByn0rNqhsviEABZLjOt5fJ4BEA+N3lGWQEXCZ1Mzq5wiksAnBVG5TmnYCZyuiheSuXVNT4BcH0jFSUfCeIzSnewqHnu82LoWyhXSAiAyh14RTJE9AJ1T4asVKFWJ0PqNWio3ixUggceyAgAMzESNkMD2yYnejTp2b6On6zjKHUYjA6zJDT+ZguIr9iTVJwXiS8ykbt4HrsLyLLY08ycEoHra09dn+RgO3hE58fBQprHsk2hlP5txPCCRXeuFU68aIekl8SfcEke+MbhVXU/aHiV1tZVD+JdJIjDKFVoK6UKbe5VfiTwxr7LJSTv7JtCQiKph6Y9TSnt6SkCI1msJboiuhz9j4/+p0us0LxGcjWhyoNqa/j1NWxVB2ULOv4NNLU8hlgxmdkAAAAASUVORK5CYII="
-                />
-                <image
-                  width="19"
-                  height="16"
-                  id="img2"
-                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAQAQMAAADOCtYhAAAAAXNSR0IB2cksfwAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAAGUlEQVR4nGNgYH/AAML//2NiBgYIxi4HBgA3+iA7/HLFmgAAAABJRU5ErkJggg=="
-                />
-              </defs>
-              <style></style>
-              <filter id="f0">
-                <feFlood flood-color="#fd521b" flood-opacity="1" />
-                <feBlend mode="normal" in2="SourceGraphic" />
-                <feComposite in2="SourceAlpha" operator="in" />
-              </filter>
-              <g filter="url(#f0)">
-                <use href="#img1" x="0" y="0" />
-                <use href="#img2" x="16" y="18" />
-              </g>
-            </svg>
+          <button
+            class="absolute left-0 lg:static button-open-side order-1 lg:order-2"
+            type="button"
+            data-open-side
+          >
+            <span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
         </div>
+      </div>
+
+      <div class="relative sidebar-header" data-menu-side>
+        <button
+          type="button"
+          data-close-side
+          class="hidden lg:block close-side fixed top-5 right-5 w-[51px] h-[51px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0 pointer-events-none"
+        >
+          <i class="fa-solid fa-xmark text-white text-2xl"></i>
+        </button>
+        <div
+          class="overflow-y-auto border-r border-[#141414] lg:border-r-0 content-sidebar fixed left-0 lg:left-[unset] lg:right-0 top-0 bottom-0 bg-black lg:p-5 w-[300px] lg:w-[450px] z-40 duration-[0.4s] transition-all"
+          data-sidebar
+        >
+          <button
+            type="button"
+            data-close-side
+            class="lg:hidden close-side fixed top-5 right-5 w-[40px] h-[40px] z-50 border border-primary-500 duration-[0.3s] transition-all rounded-full opacity-0 pointer-events-none"
+          >
+            <i class="fa-solid fa-xmark text-primary-500 text-xl"></i>
+          </button>
+          <div class="p-5">
+            <a href="/">
+              <img src="./assets/img/logo.svg" alt="Logo" class="mx-auto" />
+            </a>
+            <h4
+              class="tex-lg font-extrabold text-secondary-500 pt-8 lg:pt-20 font-secondary"
+            >
+              Seja muito bem-vindo, <br />
+              em que podemos ajudar você?
+            </h4>
+
+            <div class="lg:hidden pt-10">
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    href="/"
+                    class="text-lg text-text-500 flex items-center justify-between"
+                  >
+                    <span> Home </span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/quem-somos.html"
+                    class="text-lg text-text-500 flex items-center justify-between"
+                    ><span>Quem Somos </span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+
+                <li data-menu-mobile>
+                  <div class="flex items-center justify-between">
+                    <a href="/servicos.html" class="text-lg text-text-500"
+                      >Serviços
+                    </a>
+                    <button type="button" class="px-4" data-open-menu-mobile>
+                      <i
+                        class="fa-solid fa-angle-right text-primary-500 transition-all text-lg"
+                      ></i>
+                    </button>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all"
+                    style="max-height: 0"
+                    data-content-menu
+                  >
+                    <ul class="py-4">
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span> Seja a
+                          Marca Atraente</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Criação e
+                          Planejamento</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span
+                          >Dashboards</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Lojística</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>
+                          Gelolocalização</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Call
+                          center</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/servicos.html"
+                          class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                          ><span class="text-secondary-500">»</span>Reparo
+                          Tech</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a
+                    href="/na-midia.html"
+                    class="text-lg text-white flex items-center justify-between"
+                    ><span class="relative"
+                      >Na Mídia
+                      <i
+                        class="fa-solid fa-caret-down text-xs text-primary-500 absolute bottom-full left-0 right-0 flex items-center justify-center"
+                      ></i
+                    ></span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/contato.html"
+                    class="text-lg text-text-500 flex items-center justify-between"
+                    ><span>Contato</span>
+
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 px-4"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="py-20">
+              <h4 class="text-white text-lg font-bold pb-5 font-secondary">
+                ENTRE EM CONTATO
+              </h4>
+              <div class="flex flex-col gap-5">
+                <a href="#" class="inline-flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-secondary-500"></i>
+                  <p class="text-text-500 font-extrabold text-lg">
+                    <span class="font-normal">11 </span>5087.9526
+                  </p>
+                </a>
+                <a href="#" class="inline-flex items-center gap-2">
+                  <i class="fa-solid fa-envelope text-secondary-500"></i>
+                  <p class="text-text-500">comercial@2gather.com.br</p>
+                </a>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-location-pin text-secondary-500"></i>
+
+                  <p class="text-text-500">
+                    Rua Machado Bitencourt 190 - CJ 407<br />
+                    Vila Clementino, - São Paulo - SP<br />
+                    CEP: 04044-903
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4
+                class="text-lg text-white font-extrabold pb-5 font-secondary uppercase"
+              >
+                Redes sociais
+              </h4>
+              <ul class="flex items-center gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="transition fa-brands fa-facebook-f text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="fa-brands fa-instagram transition text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin-in transition text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                  >
+                    <i
+                      class="fa-brands fa-pinterest-p transition text-text-300 group-hover:text-white text-2xl"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none duration-[0.3s] transition-all"
+          data-overlay
+        ></div>
       </div>
     </header>
 
@@ -137,7 +365,9 @@
         />
       </div>
       <div class="container xl:max-w-7xl mx-auto px-4 pt-5">
-        <div class="flex items-center flex-col gap-2 justify-center pt-20">
+        <div
+          class="flex items-center flex-col gap-2 justify-center pt-10 lg:pt-20"
+        >
           <img src="./assets/img/pre-title.svg" class="mb-2" />
           <p class="text-primary-400">agregando soluções para o seu negócio</p>
           <h1 class="text-4xl text-white font-black">Na Mídia</h1>
@@ -158,10 +388,12 @@
 
       <div class="container xl:max-w-6xl mx-auto px-4 pt-10">
         <div class="flex items-center justify-center flex-col">
-          <h2 class="font-black text-white text-2xl">
+          <h2 class="font-black text-white text-xl lg:text-2xl">
             Vamos Juntos, <span class="text-primary-500">Vamos 2gather!</span>
           </h2>
-          <p class="text-white text-2xl text-center max-w-2xl pt-5 pb-10">
+          <p
+            class="text-white text-xl lg:text-2xl text-center max-w-2xl pt-5 pb-10"
+          >
             Surgimos da necessidade de integrar um processo completo de soluções
             para o seu time de marketing.
           </p>
@@ -170,7 +402,7 @@
           <div class="">
             <div>
               <img src="./assets/img/quem-somos1.png" alt="" />
-              <div class="pl-11">
+              <div class="lg:pl-11">
                 <h5 class="text-primary-500 font-black pt-5">
                   Título de Destaque
                 </h5>
@@ -197,7 +429,7 @@
           <div class="">
             <div>
               <img src="./assets/img/quem-somos1.png" alt="" />
-              <div class="pl-11">
+              <div class="lg:pl-11">
                 <h5 class="text-primary-500 font-black pt-5">
                   Título de Destaque
                 </h5>
@@ -224,7 +456,7 @@
           <div class="">
             <div>
               <img src="./assets/img/quem-somos1.png" alt="" />
-              <div class="pl-11">
+              <div class="lg:pl-11">
                 <h5 class="text-primary-500 font-black pt-5">
                   Título de Destaque
                 </h5>
@@ -251,7 +483,7 @@
           <div class="">
             <div>
               <img src="./assets/img/quem-somos1.png" alt="" />
-              <div class="pl-11">
+              <div class="lg:pl-11">
                 <h5 class="text-primary-500 font-black pt-5">
                   Título de Destaque
                 </h5>
@@ -276,7 +508,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mt-10">
           <a
             href="na-midia-aberto.html"
             class="mt-5 bg-body-default inline-flex items-center gap-2 py-2 px-4 border border-primary-500 transition hover:bg-primary-500"
@@ -288,20 +520,24 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="hidden lg:block">
       <div class="bg-footer py-10">
         <div class="container xl:max-w-7xl mx-auto px-4">
-          <a href="/" class="inline-block">
+          <a href="/" class="hidden lg:inline-block">
             <img src="./assets/img/logo.svg" alt="" class="pb-5" />
           </a>
           <div class="flex items-start flex-col lg:flex-row gap-8">
-            <div class="lg:w-1/2">
-              <h4 class="text-white text-lg font-bold pb-5">
+            <div class="w-full lg:w-1/2">
+              <h4
+                class="font-secondary text-center lg:text-left text-white lg:text-lg font-bold pb-5"
+              >
                 CADASTRE-SE NA NOSSA NEWSLETTER
               </h4>
 
               <form>
-                <div class="pb-5 flex items-end gap-2">
+                <div
+                  class="pb-5 flex items-center lg:items-end flex-col lg:flex-row gap-2"
+                >
                   <label
                     for="email"
                     class="border-b-2 border-[#8c8c8c] inline-flex items-center gap-2 py-2 h-10 w-full max-w-sm"
@@ -356,16 +592,14 @@
               <h4 class="text-lg text-white font-extrabold pb-5">Menu</h4>
               <ul class="flex flex-col gap-2">
                 <li>
-                  <a href="/" class="text-lg text-text-500 hover:text-white">
-                    Home</a
-                  >
+                  <a href="/" class="text-lg text-text-500">Home </a>
                 </li>
                 <li>
                   <a
                     href="/quem-somos.html"
-                    class="text-lg text-text-500 transition hover:text-white"
-                    >Quem Somos</a
-                  >
+                    class="text-lg transition text-text-500 hover:text-white"
+                    >Quem Somos
+                  </a>
                 </li>
                 <li>
                   <a
@@ -442,15 +676,15 @@
                     >Na Mídia
                     <i
                       class="fa-solid fa-caret-down text-xs text-primary-500 absolute bottom-full left-0 right-0 flex items-center justify-center"
-                    ></i
-                  ></a>
+                    ></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     href="/contato.html"
-                    class="text-lg transition text-text-500 transition hover:text-white relative"
-                    >Contato
-                  </a>
+                    class="text-lg text-text-500 transition hover:text-white"
+                    >Contato</a
+                  >
                 </li>
               </ul>
             </div>
@@ -507,6 +741,265 @@
       <div class="bg-[#1a1a1a]">
         <div class="container xl:max-w-7xl mx-auto px-4 py-6">
           <div class="flex items-center justify-between">
+            <p class="text-white">
+              Copyright © 2023 2Gather. Todos os direitos reservados.
+            </p>
+            <a href="#" class="flex items-start gap-2">
+              <p class="text-white text-xs">Desenvolvidor por</p>
+              <img src="./assets/img/binden.png" alt="Binden" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="lg:hidden">
+      <div class="container mx-auto px-4">
+        <h4
+          class="font-secondary text-center lg:text-left text-white lg:text-lg font-bold pb-5"
+        >
+          CADASTRE-SE NA NOSSA NEWSLETTER
+        </h4>
+        <form>
+          <div
+            class="pb-8 flex items-center lg:items-end flex-col lg:flex-row gap-11"
+          >
+            <label
+              for="email"
+              class="border-b-2 border-[#8c8c8c] inline-flex items-center gap-2 py-2 h-10 w-full max-w-sm"
+            >
+              <img src="./assets/img/email.svg" alt="" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu Email"
+                class="bg-transparent border-none focus:border-none focus-visible:outline-0 text-white placeholder:text-[#8c8c8c]"
+              />
+            </label>
+            <button
+              type="submit"
+              class="border border-white w-[70%] h-10 px-4 transition hover:bg-white inline-flex items-center justify-center gap-2 group"
+            >
+              <span
+                class="font-extrabold text-white transition group-hover:text-text-500"
+                >Enviar</span
+              >
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-xs transition text-white group-hover:text-text-500"
+              ></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="bg-footer-mobile pt-8 pb-40">
+        <div class="container mx-auto px-4">
+          <p class="text-white text-lg font-bold pb-5">ENTRE EM CONTATO</p>
+          <div class="flex flex-col gap-5">
+            <a href="#" class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-phone text-secondary-500"></i>
+              <p class="text-text-500 font-extrabold text-lg">
+                <span class="font-normal">11 </span>5087.9526
+              </p>
+            </a>
+            <a href="#" class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-secondary-500"></i>
+              <p class="text-text-500">comercial@2gather.com.br</p>
+            </a>
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-location-pin text-secondary-500"></i>
+
+              <p class="text-text-500">
+                Rua Machado Bitencourt 190 - CJ 407<br />
+                Vila Clementino, - São Paulo - SP<br />
+                CEP: 04044-903
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="font-secondary text-lg text-white font-extrabold pb-8 pt-12"
+            >
+              MENU
+            </h4>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href="/"
+                  class="text-lg text-text-500 flex items-center justify-between"
+                >
+                  <span> Home </span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/quem-somos.html"
+                  class="text-lg text-text-500 flex items-center justify-between"
+                  ><span>Quem Somos </span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+
+              <li data-menu-mobile>
+                <div class="flex items-center justify-between">
+                  <a href="/servicos.html" class="text-lg text-text-500"
+                    >Serviços
+                  </a>
+                  <button type="button" class="px-4" data-open-menu-mobile>
+                    <i
+                      class="fa-solid fa-angle-right text-primary-500 transition-all text-lg"
+                    ></i>
+                  </button>
+                </div>
+                <div
+                  class="overflow-hidden transition-all"
+                  style="max-height: 0"
+                  data-content-menu
+                >
+                  <ul class="py-4">
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span> Seja a Marca
+                        Atraente</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Criação e
+                        Planejamento</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Dashboards</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Lojística</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>
+                        Gelolocalização</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Call center</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/servicos.html"
+                        class="transition text-text-500 text-sm inline-flex gap-1 hover:text-white"
+                        ><span class="text-secondary-500">»</span>Reparo Tech</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="/na-midia.html"
+                  class="text-lg text-white flex items-center justify-between"
+                  ><span class="relative"
+                    >Na Mídia
+                    <i
+                      class="fa-solid fa-caret-down text-xs text-primary-500 absolute bottom-full left-0 right-0 flex items-center justify-center"
+                    ></i
+                  ></span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contato.html"
+                  class="text-lg text-text-500 flex items-center justify-between"
+                  ><span>Contato</span>
+
+                  <i class="fa-solid fa-angle-right text-primary-500 px-4"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-12">
+            <h4 class="text-lg text-white font-extrabold pb-5">
+              Redes sociais
+            </h4>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="transition fa-brands fa-facebook-f text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="fa-brands fa-instagram transition text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="fa-brands fa-linkedin-in transition text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center h-9 w-9 bg-gray2-400 rounded-full group"
+                >
+                  <i
+                    class="fa-brands fa-pinterest-p transition text-text-300 group-hover:text-white text-2xl"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1a1a1a]">
+        <div class="container xl:max-w-7xl mx-auto px-4 py-6">
+          <div
+            class="flex items-center flex-col gap-6 justify-center text-center"
+          >
             <p class="text-white">
               Copyright © 2023 2Gather. Todos os direitos reservados.
             </p>
