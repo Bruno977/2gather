@@ -1823,6 +1823,10 @@ html,
     margin-bottom: 6rem;
   }
 
+  .lg\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .lg\:block {
     display: block;
   }
