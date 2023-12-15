@@ -946,6 +946,10 @@ html,
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -990,20 +994,16 @@ html,
   height: 140vh;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[51px\] {
   height: 51px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[30px\] {
-  height: 30px;
-}
-
-.h-\[40px\] {
-  height: 40px;
 }
 
 .min-h-\[200px\] {
@@ -1034,6 +1034,10 @@ html,
   width: 30px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .w-\[51px\] {
   width: 51px;
 }
@@ -1044,10 +1048,6 @@ html,
 
 .w-full {
   width: 100%;
-}
-
-.w-\[40px\] {
-  width: 40px;
 }
 
 .max-w-2xl {
@@ -1076,16 +1076,6 @@ html,
 
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-
-.translate-x-0 {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-full {
-  --tw-translate-x: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-rotate-90 {
@@ -1220,6 +1210,11 @@ html,
   border-style: none;
 }
 
+.border-\[\#141414\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 20 20 / var(--tw-border-opacity));
+}
+
 .border-\[\#4d4e50\] {
   --tw-border-opacity: 1;
   border-color: rgb(77 78 80 / var(--tw-border-opacity));
@@ -1248,16 +1243,6 @@ html,
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#ededed\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(237 237 237 / var(--tw-border-opacity));
-}
-
-.border-\[\#141414\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(20 20 20 / var(--tw-border-opacity));
 }
 
 .bg-\[\#1a1a1a\] {
@@ -1834,6 +1819,10 @@ html,
     margin-right: auto;
   }
 
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1914,6 +1903,10 @@ html,
     gap: 10rem;
   }
 
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .lg\:border-b {
     border-bottom-width: 1px;
   }
@@ -1932,12 +1925,12 @@ html,
     background-color: rgb(43 43 43 / var(--tw-bg-opacity));
   }
 
-  .lg\:p-8 {
-    padding: 2rem;
-  }
-
   .lg\:p-5 {
     padding: 1.25rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:px-4 {
@@ -1980,12 +1973,12 @@ html,
     padding-top: 3.5rem;
   }
 
-  .lg\:pt-32 {
-    padding-top: 8rem;
-  }
-
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
   }
 
   .lg\:text-left {
