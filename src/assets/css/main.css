@@ -1981,6 +1981,10 @@ html,
     padding-top: 8rem;
   }
 
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
